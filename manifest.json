@@ -1,0 +1,12 @@
+﻿{
+	"manifest_version": 2,
+	"name": "video shopping",
+	"version": "0.0.1",
+
+	
+	"content_scripts":[{
+		"matches":["*://www.youtube.com/*"],
+		"js":["jquery-2.0.0.min.js", "content_script.js","parse-1.4.2.min.js","scrollingcarousel.2.0.min.js"]
+	}],
+	"permissions" : ["tabs","http://localhost/"]
+}
